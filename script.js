@@ -25,25 +25,31 @@ function calculatePrice(event)
 
     let res;
 
-    if(age<young)
+    if(age<young){
         res= (basePrice * km) * youngDisc;
-    else if (age> old)
+    }
+    else if (age> old){
         res= (basePrice * km) * oldDisc;
-    else
+    }
+    else{
         res= (basePrice * km);
-
-    console.log(res);
+    }
     
-    let price = document.getElementById(finalPrice);
+    
+    console.log(res);
+    let formattedRes = res.toFixed(2);
+    console.log(formattedRes);
+
+    let price = document.getElementById("finalPrice");
     console.log(price);
 
-    let ageOut = document.getElementById(ageOutput);
+    let ageOut = document.getElementById("ageOutput");
     console.log(ageOut);
-    let kmOut = document.getElementById(kmOutput);
+    let kmOut = document.getElementById("kmOutput");
     console.log(kmOut);
 
     ageOut.innerHTML = age.toString();
     kmOut.innerHTML = km.toString();
 
-    price.innerHTML = res.toString();
+    price.innerHTML = formattedRes.toString();
 }
