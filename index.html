@@ -22,7 +22,18 @@
                 <button type="submit" class="btn btn-secondary">Calcola prezzo biglietto</button>
             </div>
         </form>
-        <h3 class="text-danger" id="ticket-price"></h3>
+        <div class="text-danger" id="ticket-price">
+            <h4>
+                Il passeggero ha 
+                <span id="ageOutput"></span> 
+                anni e vuole percorrere
+                <span id="kmOutput"></span>
+                chilometri.
+            </h4>
+            <h3>
+                Il prezzo del biglietto è di <span id="finalPrice"></span>&euro;
+            </h3>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
