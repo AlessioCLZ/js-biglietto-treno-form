@@ -41,15 +41,13 @@ function calculatePrice(event)
     console.log(formattedRes);
 
     let price = document.getElementById("finalPrice");
-    console.log(price);
-
+    //console.log(price);
     let ageOut = document.getElementById("ageOutput");
-    console.log(ageOut);
+    //console.log(ageOut);
     let kmOut = document.getElementById("kmOutput");
-    console.log(kmOut);
+    //console.log(kmOut);
 
     ageOut.innerHTML = age.toString();
     kmOut.innerHTML = km.toString();
-
     price.innerHTML = formattedRes.toString();
 }
