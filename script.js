@@ -42,8 +42,8 @@ function calculatePrice(event)
     let kmOut = document.getElementById(kmOutput);
     console.log(kmOut);
 
-    //ageOut.innerHTML = age;
-    //kmOut.innerHTML = km;
+    ageOut.innerHTML = age.toString();
+    kmOut.innerHTML = km.toString();
 
-    //price.innerHTML = res;
+    price.innerHTML = res.toString();
 }
