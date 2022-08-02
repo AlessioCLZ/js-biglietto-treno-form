@@ -1,9 +1,6 @@
 //prendo dal documento la form
 const form = document.getElementById('data-insert');
 
-
-
-
 //costanti di classe
 const youngDisc = 0.2;
 const oldDisc = 0.4;
@@ -21,9 +18,11 @@ function calculatePrice(event)
     
     //prendo dal form i valori e li inserisco dentro due variabili
     const km =document.getElementById('km').value;
+    console.log(km);
 
     const age = document.getElementById('age').value;
-    
+    console.log(age);
+
     let res;
 
     if(age<young)
@@ -32,13 +31,19 @@ function calculatePrice(event)
         res= (basePrice * km) * oldDisc;
     else
         res= (basePrice * km);
+
+    console.log(res);
     
-    const price = document.getElementById(finalPrice);
-    const ageOut = document.getElementById(ageOutput);
-    const kmOut = document.getElementById(kmOutput);
+    let price = document.getElementById(finalPrice);
+    console.log(price);
 
-    ageOut.innerHTML = age;
-    kmOut.innerHTML = km;
+    let ageOut = document.getElementById(ageOutput);
+    console.log(ageOut);
+    let kmOut = document.getElementById(kmOutput);
+    console.log(kmOut);
 
-    price.innerHTML = res;
+    //ageOut.innerHTML = age;
+    //kmOut.innerHTML = km;
+
+    //price.innerHTML = res;
 }
